@@ -1,0 +1,17 @@
+image: node
+
+stages:
+  - test
+
+before_script:
+  - npm install
+
+cache:
+  paths:
+    - node_modules/
+
+test:
+  stage: test
+  script:
+    - npm run lint
+    - npm run test

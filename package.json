@@ -1,0 +1,54 @@
+{
+  "name": "@mmintel/datocms-tools",
+  "version": "0.0.0",
+  "description": "Useful tools for DatoCMS",
+  "main": "dist/lib.min.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint lib/*.js",
+    "build": "webpack",
+    "export-models": "node -r esm scripts/export-models.js",
+    "import-models": "node -r esm scripts/import-models.js",
+    "release": "npm run test && standard-version && git push --follow-tags && npm publish"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@commitlint/config-conventional": "^8.1.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^3.0.0",
+    "commitlint": "^8.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.4",
+    "jest": "^24.1.0",
+    "standard-version": "^7.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
+  },
+  "dependencies": {
+    "datocms-client": "^2.0.9",
+    "esm": "^3.2.25",
+    "fs-extra": "^8.1.0"
+  }
+}
