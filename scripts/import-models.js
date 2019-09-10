@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { importModels } from '../lib';
 
-const filePath = './output/data.json';
+const filePath = './output/models.json';
 const data = JSON.parse(fs.readFileSync(filePath));
 const apiKey = process.env.DATOCMS_API_KEY;
 

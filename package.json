@@ -9,6 +9,8 @@
     "build": "webpack",
     "export-models": "node -r esm scripts/export-models.js",
     "import-models": "node -r esm scripts/import-models.js",
+    "export-menu": "node -r esm scripts/export-menu.js",
+    "import-menu": "node -r esm scripts/import-menu.js",
     "release": "npm run test && standard-version && git push --follow-tags && npm publish"
   },
   "devDependencies": {
