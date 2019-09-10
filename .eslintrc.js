@@ -13,7 +13,8 @@ module.exports = {
   plugins: ['jest'],
   rules: {
     'no-restricted-syntax': 0,
-    'no-await-in-loop': 0
+    'no-await-in-loop': 0,
+    'max-len': 0
   },
   settings: {
     'import/resolver': {
