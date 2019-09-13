@@ -1,5 +1,5 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -14,6 +14,7 @@ module.exports = {
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'lib'),
+      '~': path.resolve(__dirname, 'lib'),
     },
   },
   module: {
@@ -22,7 +23,9 @@ module.exports = {
     ],
   },
   optimization: {
-    minimizer: [new UglifyJsPlugin()],
+    minimizer: [new TerserPlugin({
+      extractComments: true,
+    })],
   },
   plugins: [
     new CleanWebpackPlugin(),
