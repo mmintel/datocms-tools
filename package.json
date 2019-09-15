@@ -7,6 +7,7 @@
     "test": "jest",
     "lint": "eslint lib/*.js",
     "build": "webpack",
+    "reset": "node -r esm scripts/reset.js",
     "export-models": "node -r esm scripts/export-models.js",
     "import-models": "node -r esm scripts/import-models.js",
     "export-menu": "node -r esm scripts/export-menu.js",
