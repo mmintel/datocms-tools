@@ -19,7 +19,11 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {},
-      webpack: {}
+      alias: {
+        map: [
+          ['@', './lib']
+        ]
+      }
     }
   },
 }
