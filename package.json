@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint lib/*.js",
-    "build": "rollup lib/index.js --file dist/lib.min.js --format cjs",
+    "build": "rollup -c",
     "reset": "node -r esm scripts/reset.js",
     "export-models": "node -r esm scripts/export-models.js",
     "import-models": "node -r esm scripts/import-models.js",
@@ -35,6 +35,8 @@
     "husky": "^3.0.4",
     "jest": "^24.1.0",
     "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.2",
     "standard-version": "^7.0.0"
   },
   "jest": {
