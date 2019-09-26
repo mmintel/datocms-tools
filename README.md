@@ -1,6 +1,7 @@
 # datocms-tools
----
 Provides tools to import, export or reset [DatoCMS](http://datocms.com) projects. Will also make sure to update existing models.
+
+[Read more at this Medium article](https://medium.com/baretheme/duplicate-a-datocms-project-without-its-data-798b5dcabd15)
 
 ## Important Note
 This script is not battle proven yet! You may risk to loose data so use with care!!
