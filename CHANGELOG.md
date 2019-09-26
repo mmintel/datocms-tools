@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/mmintel/datocms-tools/compare/v0.0.4...v0.0.5) (2019-09-26)
+
+
+### Bug Fixes
+
+* replace webpack with rollup ([7e5e9c5](https://github.com/mmintel/datocms-tools/commit/7e5e9c5))
+
 ### [0.0.4](https://github.com/mmintel/datocms-tools/compare/v0.0.3...v0.0.4) (2019-09-15)
 
 
