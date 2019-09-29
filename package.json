@@ -10,12 +10,14 @@
     "reset": "node -r esm scripts/reset.js",
     "export-models": "node -r esm scripts/export-models.js",
     "import-models": "node -r esm scripts/import-models.js",
+    "extract-models": "node -r esm scripts/extract-models.js",
     "export-menu": "node -r esm scripts/export-menu.js",
     "import-menu": "node -r esm scripts/import-menu.js",
     "release": "npm run test && standard-version && git push --follow-tags && npm publish --access=public"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/node": "^7.6.2",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-transform-regenerator": "^7.4.5",
     "@babel/preset-env": "^7.5.5",
@@ -52,6 +54,7 @@
   "dependencies": {
     "datocms-client": "^2.0.9",
     "esm": "^3.2.25",
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^8.1.0",
+    "yargs": "^14.0.0"
   }
 }

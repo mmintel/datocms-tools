@@ -1,8 +1,9 @@
+import { argv } from 'yargs';
 import fs from 'fs';
 import { importMenu } from '../lib';
 
-const menuFilePath = './output/menu.json';
-const modelsFilePath = './output/models.json';
+const menuFilePath = argv.menu || './output/menu.json';
+const modelsFilePath = argv.models || './output/models.json';
 let menuItems;
 let models;
 
@@ -18,9 +19,9 @@ try {
   throw new Error('Could not read models.json, did you export first?');
 }
 
-const apiKey = process.env.DATOCMS_API_KEY;
+const { apiKey } = argv;
 
-if (!apiKey) throw new Error('DATOCMS_API_KEY not found in environment variables.');
+if (!apiKey) throw new Error('apiKey found in arguments.');
 
 importMenu({
   menuItems,

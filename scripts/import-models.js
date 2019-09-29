@@ -1,11 +1,12 @@
+import { argv } from 'yargs';
 import fs from 'fs';
 import { importModels } from '../lib';
 
-const filePath = './output/models.json';
+const filePath = argv.input || './output/models.json';
 const models = JSON.parse(fs.readFileSync(filePath));
-const apiKey = process.env.DATOCMS_API_KEY;
+const { apiKey } = argv;
 
-if (!apiKey) throw new Error('DATOCMS_API_KEY not found in environment variables.');
+if (!apiKey) throw new Error('apiKey found in arguments.');
 
 importModels({
   models,

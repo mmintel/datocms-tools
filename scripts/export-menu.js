@@ -1,10 +1,11 @@
+import { argv } from 'yargs';
 import fse from 'fs-extra';
 import { exportMenu } from '../lib';
 
-const filePath = './output/menu.json';
-const apiKey = process.env.DATOCMS_API_KEY;
+const filePath = argv.output || './output/menu.json';
+const { apiKey } = argv;
 
-if (!apiKey) throw new Error('DATOCMS_API_KEY not found in environment variables.');
+if (!apiKey) throw new Error('apiKey found in arguments.');
 
 exportMenu({
   apiKey,
