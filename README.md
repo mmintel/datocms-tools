@@ -50,7 +50,7 @@ export default async function() {
 | --- | --- | --- |
 | `importModels` | `{ apiKey, data }` | Imports given data to the project available with the `apiKey`. Data must contain `itemTypes` and `fields`.
 | `exportModels` | `{ apiKey }` | Exports `itemTypes` and `fields` from the project available with the given `apiKey`
-| `extractModels` | `{ names, models }` | Extracts `itemTypes` and `fields` from given models. Expects names to search for, can be `String` or `Array`.
+| `extractModels` | `{ apiKeys, models }` | Extracts `itemTypes` and `fields` from given models. Expects apiKeys to search for, can be `String` or `Array`.
 | `importMenu` | `{ apiKey, menuItems, models }` | Imports menu items to the project with given `apiKey`. Will also delete all menuItems that do not exist in the given data.
 | `exportMenu` | `{ apiKey }` | Will export menuItems from the project with given `apiKey`
 
@@ -62,13 +62,13 @@ I created scripts for each of the methods so you can use them from your command 
 #### Via NPM
 * `npm run import-models -- --apiKey=xxxx [--input=./output/models.json]`
 * `npm run export-models -- --apiKey=xxxx [--output=./output/models.json]`
-* `npm run extract-models -- --names=Model1 Model2 [--input=./data/models.json --output=./output/extracted.json]`
+* `npm run extract-models -- --apiKeys=model_1 model_2 [--input=./data/models.json --output=./output/extracted.json]`
 * `npm run import-menu -- --apiKey=xxxx [--menu=./output/menu.json --models=./output/models.json]`
 * `npm run export-menu -- --apiKey=xxxx [--output=./output/menu.json]`
 
 #### Via node (with babel-node)
 * `node_modules/.bin/babel-node import-models -- --apiKey=xxxx [--input=./output/models.json]`
 * `node_modules/.bin/babel-node export-models -- --apiKey=xxxx [--output=./output/models.json]`
-* `node_modules/.bin/babel-node extract-models -- --names=Model1 Model2 [--input=./data/models.json --output=./output/extracted.json]`
+* `node_modules/.bin/babel-node extract-models -- --apiKeys=model_1 model_2 [--input=./data/models.json --output=./output/extracted.json]`
 * `node_modules/.bin/babel-node import-menu -- --apiKey=xxxx [--menu=./output/menu.json --models=./output/models.json]`
 * `node_modules/.bin/babel-node export-menu -- --apiKey=xxxx [--output=./output/menu.json]`

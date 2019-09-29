@@ -14,12 +14,12 @@ try {
   console.log('Could not read models', e);
 }
 
-if (!argv.names) {
-  throw new Error('Could not find "names" in passed arguments.');
+if (!argv.apiKeys) {
+  throw new Error('Could not find "apiKeys" in passed arguments.');
 }
 
 const data = extractModel({
-  names: argv.names,
+  apiKeys: argv.apiKeys,
   models,
 });
 fse.outputFileSync(output, JSON.stringify(data));
