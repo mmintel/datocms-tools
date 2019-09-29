@@ -2,7 +2,7 @@ import yargs from 'yargs';
 import fse from 'fs-extra';
 import { extractModel } from '../lib';
 
-const { argv } = yargs.array('names');
+const { argv } = yargs.array('apiKeys');
 
 const input = argv.input || './output/models.json';
 const output = argv.output || './output/extracted.json';
