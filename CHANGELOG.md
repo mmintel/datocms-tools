@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/mmintel/datocms-tools/compare/v0.0.7...v0.0.8) (2019-09-29)
+
+
+### Bug Fixes
+
+* adapt to new syntax ([01b0a93](https://github.com/mmintel/datocms-tools/commit/01b0a93))
+
+
+### Features
+
+* adds `extract-models` ([1a8a143](https://github.com/mmintel/datocms-tools/commit/1a8a143))
+
 ### [0.0.7](https://github.com/mmintel/datocms-tools/compare/v0.0.6...v0.0.7) (2019-09-26)
 
 ### [0.0.6](https://github.com/mmintel/datocms-tools/compare/v0.0.5...v0.0.6) (2019-09-26)
