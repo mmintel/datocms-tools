@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/mmintel/datocms-tools/compare/v0.0.10...v0.0.11) (2019-09-29)
+
+
+### Bug Fixes
+
+* dont crash when field does not exist ([3789f7c](https://github.com/mmintel/datocms-tools/commit/3789f7c))
+* improve related field handling of extractModels ([54547c9](https://github.com/mmintel/datocms-tools/commit/54547c9))
+
 ### [0.0.10](https://github.com/mmintel/datocms-tools/compare/v0.0.9...v0.0.10) (2019-09-29)
 
 ### [0.0.9](https://github.com/mmintel/datocms-tools/compare/v0.0.8...v0.0.9) (2019-09-29)
