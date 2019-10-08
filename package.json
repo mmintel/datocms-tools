@@ -8,6 +8,7 @@
     "lint": "eslint lib/*.js",
     "build": "rollup -c",
     "reset": "node -r esm scripts/reset.js",
+    "clear-relations": "node -r esm scripts/clear-relations.js",
     "export-models": "node -r esm scripts/export-models.js",
     "import-models": "node -r esm scripts/import-models.js",
     "extract-models": "node -r esm scripts/extract-models.js",
