@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/mmintel/datocms-tools/compare/v0.0.16...v0.1.0) (2019-10-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* using new way to call scripts
+
+* all methods use prompts ([cb7dd9c](https://github.com/mmintel/datocms-tools/commit/cb7dd9c))
+
 ### [0.0.16](https://github.com/mmintel/datocms-tools/compare/v0.0.15...v0.0.16) (2019-10-08)
 
 ### [0.0.15](https://github.com/mmintel/datocms-tools/compare/v0.0.14...v0.0.15) (2019-10-08)
