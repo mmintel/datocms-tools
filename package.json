@@ -8,13 +8,16 @@
     "lint": "eslint lib/*.js",
     "build": "rollup -c",
     "reset": "node -r esm scripts/reset.js",
-    "clear-relations": "node -r esm scripts/clear-relations.js",
-    "export-models": "node -r esm scripts/export-models.js",
-    "import-models": "node -r esm scripts/import-models.js",
-    "extract-models": "node -r esm scripts/extract-models.js",
-    "export-menu": "node -r esm scripts/export-menu.js",
-    "import-menu": "node -r esm scripts/import-menu.js",
     "release": "npm run test && standard-version && git push --follow-tags && npm publish --access=public"
+  },
+  "bin": {
+    "clear-relations": ".bin/clear-relations.js",
+    "export-menu": ".bin/export-menu.js",
+    "export-models": ".bin/export-models.js",
+    "extract-models": ".bin/extract-models.js",
+    "import-menu": ".bin/import-menu.js",
+    "import-models": ".bin/import-models.js",
+    "reset": ".bin/reset.js"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -57,6 +60,7 @@
     "esm": "^3.2.25",
     "fs-extra": "^8.1.0",
     "lodash": "^4.17.15",
+    "prompts": "^2.2.1",
     "yargs": "^14.0.0"
   }
 }
