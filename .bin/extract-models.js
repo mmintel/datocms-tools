@@ -1,25 +1,40 @@
-import yargs from 'yargs';
-import fse from 'fs-extra';
-import { extractModel } from '../lib';
+#!/usr/bin/env node
+const fse = require('fs-extra');
+const prompts = require('prompts');
+const { extractModel } = require('..');
 
-const { argv } = yargs.array('apiKeys');
+const questions = [
+  {
+    type: 'text',
+    name: 'input',
+    message: 'Where are your models stored?',
+    initial: './output/models.json',
+  },
+  {
+    type: 'text',
+    name: 'output',
+    message: 'Where would you like to store the extracted models?',
+    initial: './output/extracted.json',
+  },
+];
 
-const input = argv.input || './output/models.json';
-const output = argv.output || './output/extracted.json';
-let models;
+const run = async function run() {
+  const response = await prompts(questions);
+  const { apiKey } = response;
 
-try {
-  models = JSON.parse(fse.readFileSync(input));
-} catch (e) {
-  console.log('Could not read models', e);
-}
+  let models;
 
-if (!argv.apiKeys) {
-  throw new Error('Could not find "apiKeys" in passed arguments.');
-}
+  try {
+    models = JSON.parse(fse.readFileSync(response.input));
+  } catch (e) {
+    console.log('Could not read models', e);
+  }
 
-const data = extractModel({
-  apiKeys: argv.apiKeys,
-  models,
-});
-fse.outputFileSync(output, JSON.stringify(data));
+  const data = extractModel({
+    apiKey,
+    models,
+  });
+  fse.outputFileSync(response.output, JSON.stringify(data));
+};
+
+run();

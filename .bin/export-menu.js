@@ -1,14 +1,33 @@
-import { argv } from 'yargs';
-import fse from 'fs-extra';
-import { exportMenu } from '../lib';
+#!/usr/bin/env node
+const fse = require('fs-extra');
+const prompts = require('prompts');
+const { exportMenu } = require('..');
 
-const filePath = argv.output || './output/menu.json';
-const { apiKey } = argv;
+const questions = [
+  {
+    type: 'text',
+    name: 'apiKey',
+    message: 'Please enter your full-access DatoCMS key',
+    validate: (v) => v.length >= 10,
+  },
+  {
+    type: 'text',
+    name: 'output',
+    message: 'Where would you like to save the file?',
+    initial: './output/models.json',
+  },
+];
 
-if (!apiKey) throw new Error('apiKey found in arguments.');
+const run = async function run() {
+  const response = await prompts(questions);
+  const { apiKey } = response;
 
-exportMenu({
-  apiKey,
-}).then((data) => {
-  fse.outputFileSync(filePath, JSON.stringify(data));
-});
+  exportMenu({
+    apiKey,
+  }).then((data) => {
+    fse.outputFileSync(response.output, JSON.stringify(data));
+  });
+};
+
+run();
+

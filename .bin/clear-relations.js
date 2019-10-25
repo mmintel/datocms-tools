@@ -1,20 +1,37 @@
-import { argv } from 'yargs';
-import fse from 'fs-extra';
-import { clearRelations } from '../lib';
+#!/usr/bin/env node
+const prompts = require('prompts');
+const { clearRelations } = require('..');
 
-const input = argv.input || './output/models.json';
-const output = argv.output || input;
+const questions = [
+  {
+    type: 'text',
+    name: 'apiKey',
+    message: 'Please enter your full-access DatoCMS key',
+    validate: (v) => v.length >= 10,
+  },
+  {
+    type: 'text',
+    name: 'input',
+    message: 'Where are your models stored?',
+    initial: './output/models.json',
+  },
+  {
+    type: 'text',
+    name: 'output',
+    message: 'Where would you like to save the file?',
+    initial: './output/cleared-models.json',
+  },
+];
 
-let models;
+const run = async function run() {
+  const response = await prompts(questions);
+  const { apiKey } = response;
 
-try {
-  models = JSON.parse(fse.readFileSync(input));
-} catch (e) {
-  throw new Error('Could not read input.');
-}
+  clearRelations({
+    models,
+  }).then((data) => {
+    fse.outputFileSync(output, JSON.stringify(data));
+  });
+};
 
-clearRelations({
-  models,
-}).then((data) => {
-  fse.outputFileSync(output, JSON.stringify(data));
-});
+run();

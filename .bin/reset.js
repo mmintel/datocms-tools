@@ -1,9 +1,23 @@
-import { reset } from '../lib';
+#!/usr/bin/env node
+const prompts = require('prompts');
+const { reset } = require('..');
 
-const apiKey = process.env.DATOCMS_API_KEY;
+const questions = [
+  {
+    type: 'text',
+    name: 'apiKey',
+    message: 'Please enter your full-access DatoCMS key',
+    validate: (v) => v.length >= 10,
+  },
+];
 
-if (!apiKey) throw new Error('DATOCMS_API_KEY not found in environment variables.');
+const run = async function run() {
+  const response = await prompts(questions);
+  const { apiKey } = response;
 
-reset({
-  apiKey,
-});
+  reset({
+    apiKey,
+  });
+};
+
+run();
