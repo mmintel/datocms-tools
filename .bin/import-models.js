@@ -1,14 +1,33 @@
-import { argv } from 'yargs';
-import fs from 'fs';
-import { importModels } from '../lib';
+#!/usr/bin/env node
+const fse = require('fs-extra');
+const prompts = require('prompts');
+const { importModels } = require('..');
 
-const filePath = argv.input || './output/models.json';
-const models = JSON.parse(fs.readFileSync(filePath));
-const { apiKey } = argv;
+const questions = [
+  {
+    type: 'text',
+    name: 'apiKey',
+    message: 'Please enter your full-access DatoCMS key',
+    validate: (v) => v.length >= 10,
+  },
+  {
+    type: 'text',
+    name: 'input',
+    message: 'Where are your models saved?',
+    initial: './output/models.json',
+  },
+];
 
-if (!apiKey) throw new Error('apiKey found in arguments.');
+const run = async function run() {
+  const response = await prompts(questions);
+  const { apiKey } = response;
 
-importModels({
-  models,
-  apiKey,
-});
+  const models = JSON.parse(fse.readFileSync(response.input));
+
+  importModels({
+    models,
+    apiKey,
+  });
+};
+
+run();
