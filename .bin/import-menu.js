@@ -1,30 +1,52 @@
-import { argv } from 'yargs';
-import fs from 'fs';
-import { importMenu } from '../lib';
+#!/usr/bin/env node
+const prompts = require('prompts');
+const { importMenu } = require('..');
 
-const menuFilePath = argv.menu || './output/menu.json';
-const modelsFilePath = argv.models || './output/models.json';
-let menuItems;
-let models;
+const questions = [
+  {
+    type: 'text',
+    name: 'apiKey',
+    message: 'Please enter your full-access DatoCMS key',
+    validate: (v) => v.length >= 10,
+  },
+  {
+    type: 'text',
+    name: 'input',
+    message: 'Where are your models saved?',
+    initial: './output/models.json',
+  },
+  {
+    type: 'text',
+    name: 'input',
+    message: 'Where are your menuItems saved?',
+    initial: './output/menu.json',
+  },
+];
 
-try {
-  menuItems = JSON.parse(fs.readFileSync(menuFilePath));
-} catch (e) {
-  throw new Error('Could not read menu.json, did you export first?');
-}
+const run = async function run() {
+  const response = await prompts(questions);
+  const { apiKey } = response;
 
-try {
-  models = JSON.parse(fs.readFileSync(modelsFilePath));
-} catch (e) {
-  throw new Error('Could not read models.json, did you export first?');
-}
+  let menuItems;
+  let models;
 
-const { apiKey } = argv;
+  try {
+    menuItems = JSON.parse(fs.readFileSync(response.menuItems));
+  } catch (e) {
+    throw new Error('Could not read menu.json, did you export first?');
+  }
 
-if (!apiKey) throw new Error('apiKey found in arguments.');
+  try {
+    models = JSON.parse(fs.readFileSync(response.models));
+  } catch (e) {
+    throw new Error('Could not read models.json, did you export first?');
+  }
 
-importMenu({
-  menuItems,
-  models,
-  apiKey,
-});
+  importMenu({
+    menuItems,
+    models,
+    apiKey,
+  });
+};
+
+run();
