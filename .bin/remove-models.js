@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fse = require('fs-extra');
 const prompts = require('prompts');
-const { extractModels } = require('..');
+const { removeModels } = require('..');
 
 const questions = [
   {
@@ -13,13 +13,13 @@ const questions = [
   {
     type: 'text',
     name: 'output',
-    message: 'Where would you like to store the extracted models?',
-    initial: './output/extracted.json',
+    message: 'Where would you like to store the filtered models?',
+    initial: './output/filtered.json',
   },
   {
     type: 'list',
     name: 'apiKeys',
-    message: 'Which models do you want to extract? (Comma separated list)',
+    message: 'Which models do you want to remove? (Comma separated list)',
   },
 ];
 
@@ -35,7 +35,7 @@ const run = async function run() {
     console.log('Could not read models', e);
   }
 
-  const data = extractModels({
+  const data = removeModels({
     apiKeys,
     models,
   });

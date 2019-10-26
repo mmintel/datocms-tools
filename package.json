@@ -17,6 +17,7 @@
     "extract-models": ".bin/extract-models.js",
     "import-menu": ".bin/import-menu.js",
     "import-models": ".bin/import-models.js",
+    "remove-models": ".bin/remove-models.js",
     "reset": ".bin/reset.js"
   },
   "devDependencies": {

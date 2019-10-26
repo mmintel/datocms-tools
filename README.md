@@ -11,6 +11,11 @@ This script is not battle proven yet! You may risk to loose data so use with car
 npm i -S @mmintel/datocms-tools
 ```
 
+or globally
+```
+npm i -G @mmintel/datocms-tools
+```
+
 ## Usage
 ### In Javascript
 Either import the whole object:
@@ -53,26 +58,16 @@ export default async function() {
 | `extractModels` | `{ apiKeys, models }` | Extracts `itemTypes` and `fields` from given models. Expects apiKeys to search for, can be `String` or `Array`.
 | `importMenu` | `{ apiKey, menuItems, models }` | Imports menu items to the project with given `apiKey`. Will also delete all menuItems that do not exist in the given data.
 | `exportMenu` | `{ apiKey }` | Will export menuItems from the project with given `apiKey`
-| `clearRelations` | `{ models }` | Will remove related fields, e.g. from modular content fields
-| `clearRelations` | `{ models }` | Will remove related fields, e.g. from modular content fields
+| `clearRelations` | `{ models }` | Removes related fields, e.g. from modular content fields
+| `removeModels` | `{ apiKeys, models }` | Removes one or more models including all their relations.
 
 ### Via CLI
-I created scripts for each of the methods so you can use them from your command line. Each script is also registered as an npm command. However you need to pass an API token from DatoCMS with write access.
+DatoCMS tools provides CLI commands matching the method names.
 
-*Please note:* arguments between brackets (`[...]`) are optional.
-
-#### Via NPM
-* `npm run import-models -- --apiKey=xxxx [--input=./output/models.json]`
-* `npm run export-models -- --apiKey=xxxx [--output=./output/models.json]`
-* `npm run extract-models -- --apiKeys=model_1 model_2 [--input=./data/models.json --output=./output/extracted.json]`
-* `npm run import-menu -- --apiKey=xxxx [--menu=./output/menu.json --models=./output/models.json]`
-* `npm run export-menu -- --apiKey=xxxx [--output=./output/menu.json]`
-* `npm run clear-relations -- --input=./output/models.json [--output=./output/models.json]`
-
-#### Via node (with babel-node)
-* `node_modules/.bin/babel-node import-models -- --apiKey=xxxx [--input=./output/models.json]`
-* `node_modules/.bin/babel-node export-models -- --apiKey=xxxx [--output=./output/models.json]`
-* `node_modules/.bin/babel-node extract-models -- --apiKeys=model_1 model_2 [--input=./data/models.json --output=./output/extracted.json]`
-* `node_modules/.bin/babel-node import-menu -- --apiKey=xxxx [--menu=./output/menu.json --models=./output/models.json]`
-* `node_modules/.bin/babel-node export-menu -- --apiKey=xxxx [--output=./output/menu.json]`
-* `node_modules/.bin/babel-node clear-relations -- --input=./output/models.json [--output=./output/models.json]`
+* import-models
+* export-models
+* extract-models
+* import-menu
+* export-menu
+* clear-relations
+* remove-models
