@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/mmintel/datocms-tools/compare/v0.1.0...v0.1.1) (2019-10-26)
+
+
+### Features
+
+* add remove model ([d9c4c04](https://github.com/mmintel/datocms-tools/commit/d9c4c04))
+* adds remove model script ([fba520b](https://github.com/mmintel/datocms-tools/commit/fba520b))
+
 ## [0.1.0](https://github.com/mmintel/datocms-tools/compare/v0.0.16...v0.1.0) (2019-10-25)
 
 

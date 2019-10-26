@@ -1,6 +1,6 @@
 {
   "name": "@mmintel/datocms-tools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Useful tools for DatoCMS",
   "main": "dist/lib.min.js",
   "scripts": {
