@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fse = require('fs-extra');
 const prompts = require('prompts');
-const { exportModels } = require('..');
+const { exportContent } = require('..');
 
 const questions = [
   {
@@ -14,7 +14,7 @@ const questions = [
     type: 'text',
     name: 'output',
     message: 'Where would you like to save the file?',
-    initial: './output/models.json',
+    initial: './output/content.json',
   },
 ];
 
@@ -22,7 +22,7 @@ const run = async function run() {
   const response = await prompts(questions);
   const { apiKey } = response;
 
-  exportModels({
+  exportContent({
     apiKey,
   }).then((data) => {
     fse.outputFileSync(response.output, JSON.stringify(data));

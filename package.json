@@ -18,13 +18,17 @@
     "import-menu": ".bin/import-menu.js",
     "import-models": ".bin/import-models.js",
     "remove-models": ".bin/remove-models.js",
-    "reset": ".bin/reset.js"
+    "reset": ".bin/reset.js",
+    "import-content": ".bin/import-content.js",
+    "export-content": ".bin/export-content.js",
+    "reset-content": ".bin/reset-content.js"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.6.2",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-transform-regenerator": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.5.5",
     "@commitlint/config-conventional": "^8.1.0",
     "babel-eslint": "^10.0.3",
