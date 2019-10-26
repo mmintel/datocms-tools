@@ -14,7 +14,7 @@ const questions = [
     type: 'text',
     name: 'output',
     message: 'Where would you like to save the file?',
-    initial: './output/models.json',
+    initial: './output/menu.json',
   },
 ];
 
