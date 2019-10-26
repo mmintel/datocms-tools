@@ -1,0 +1,746 @@
+{
+  "itemTypes": [{
+    "id": "137123",
+    "name": "Modular Test Feld",
+    "apiKey": "modular_test_feld",
+    "collectionAppeareance": "table",
+    "singleton": false,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": true,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": false,
+    "singletonItem": null,
+    "fields": ["584297"],
+    "titleField": null,
+    "orderingField": null
+  }, {
+    "id": "136571",
+    "name": "Social Account",
+    "apiKey": "social_account",
+    "collectionAppeareance": "table",
+    "singleton": false,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": false,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": false,
+    "singletonItem": null,
+    "fields": ["580990", "580991"],
+    "titleField": "580990",
+    "orderingField": null
+  }, {
+    "id": "136569",
+    "name": "Collection",
+    "apiKey": "collection",
+    "collectionAppeareance": "table",
+    "singleton": false,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": false,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": false,
+    "singletonItem": null,
+    "fields": ["580975", "580974", "580979", "580981"],
+    "titleField": "580975",
+    "orderingField": null
+  }, {
+    "id": "136567",
+    "name": "Layout",
+    "apiKey": "layout",
+    "collectionAppeareance": "table",
+    "singleton": true,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": false,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": true,
+    "singletonItem": "1483347",
+    "fields": ["580968", "580985", "580983", "580984", "580986", "580987", "580988", "580989", "580992"],
+    "titleField": null,
+    "orderingField": null
+  }, {
+    "id": "136564",
+    "name": "Meta-Tag",
+    "apiKey": "meta_tag",
+    "collectionAppeareance": "table",
+    "singleton": false,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": false,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": false,
+    "singletonItem": null,
+    "fields": ["580958", "580959"],
+    "titleField": "580958",
+    "orderingField": null
+  }, {
+    "id": "136558",
+    "name": "Document",
+    "apiKey": "document",
+    "collectionAppeareance": "table",
+    "singleton": false,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": false,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": false,
+    "singletonItem": null,
+    "fields": ["580955", "580961", "580978", "580963", "580972", "580982", "580960", "580951", "584296"],
+    "titleField": "580955",
+    "orderingField": null
+  }, {
+    "id": "136560",
+    "name": "Link",
+    "apiKey": "link",
+    "collectionAppeareance": "table",
+    "singleton": false,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": false,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": false,
+    "singletonItem": null,
+    "fields": ["580949", "580950"],
+    "titleField": "580949",
+    "orderingField": null
+  }, {
+    "id": "136563",
+    "name": "Teaser",
+    "apiKey": "teaser",
+    "collectionAppeareance": "table",
+    "singleton": false,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": false,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": false,
+    "singletonItem": null,
+    "fields": ["580953"],
+    "titleField": null,
+    "orderingField": null
+  }, {
+    "id": "136561",
+    "name": "Text",
+    "apiKey": "text",
+    "collectionAppeareance": "table",
+    "singleton": false,
+    "allLocalesRequired": true,
+    "sortable": false,
+    "modularBlock": false,
+    "draftModeActive": false,
+    "tree": false,
+    "orderingDirection": null,
+    "hasSingletonItem": false,
+    "singletonItem": null,
+    "fields": [],
+    "titleField": null,
+    "orderingField": null
+  }],
+  "fields": [{
+    "id": "584297",
+    "label": "Modular Title",
+    "fieldType": "string",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "modular_title",
+    "hint": null,
+    "validators": {},
+    "appeareance": {
+      "editor": "single_line",
+      "parameters": {
+        "heading": false
+      },
+      "addons": []
+    },
+    "position": 1,
+    "itemType": "137123"
+  }, {
+    "id": "580991",
+    "label": "URL",
+    "fieldType": "string",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "url",
+    "hint": null,
+    "validators": {
+      "required": {},
+      "format": {
+        "predefinedPattern": "url"
+      }
+    },
+    "appeareance": {
+      "editor": "single_line",
+      "parameters": {
+        "heading": false
+      },
+      "addons": []
+    },
+    "position": 2,
+    "itemType": "136571"
+  }, {
+    "id": "580990",
+    "label": "Title",
+    "fieldType": "string",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "title",
+    "hint": null,
+    "validators": {
+      "required": {},
+      "enum": {
+        "values": ["Instagram", "Facebook", "Twitter", "Github", "Gitlab", "Bitbucket", "Medium", "Dribbble", "Behance", "Pinterest"]
+      }
+    },
+    "appeareance": {
+      "editor": "single_line",
+      "parameters": {
+        "heading": false
+      },
+      "addons": []
+    },
+    "position": 1,
+    "itemType": "136571"
+  }, {
+    "id": "580981",
+    "label": "Thumbnail",
+    "fieldType": "file",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "thumbnail",
+    "hint": "This thumbnail is shown when a document in this collection is teasered and doesn't have it's own thumbnail specified.",
+    "validators": {},
+    "appeareance": {
+      "editor": "file",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 4,
+    "itemType": "136569"
+  }, {
+    "id": "580979",
+    "label": "Slug",
+    "fieldType": "slug",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "slug",
+    "hint": null,
+    "validators": {
+      "slugTitleField": {
+        "titleFieldId": "580975"
+      },
+      "required": {},
+      "unique": {}
+    },
+    "appeareance": {
+      "editor": "slug",
+      "parameters": {
+        "urlPrefix": null
+      },
+      "addons": []
+    },
+    "position": 3,
+    "itemType": "136569"
+  }, {
+    "id": "580975",
+    "label": "Title",
+    "fieldType": "string",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "title",
+    "hint": null,
+    "validators": {},
+    "appeareance": {
+      "editor": "single_line",
+      "parameters": {
+        "heading": false
+      },
+      "addons": []
+    },
+    "position": 1,
+    "itemType": "136569"
+  }, {
+    "id": "580974",
+    "label": "Index Document",
+    "fieldType": "link",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "index_document",
+    "hint": null,
+    "validators": {
+      "itemItemType": {
+        "itemTypes": ["136558"]
+      },
+      "required": {}
+    },
+    "appeareance": {
+      "editor": "link_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 2,
+    "itemType": "136569"
+  }, {
+    "id": "580992",
+    "label": "Social Accounts",
+    "fieldType": "links",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "social_accounts",
+    "hint": null,
+    "validators": {
+      "itemsItemType": {
+        "itemTypes": ["136571"]
+      }
+    },
+    "appeareance": {
+      "editor": "links_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 9,
+    "itemType": "136567"
+  }, {
+    "id": "580989",
+    "label": "Disclaimer Document",
+    "fieldType": "link",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "disclaimer_document",
+    "hint": null,
+    "validators": {
+      "itemItemType": {
+        "itemTypes": ["136558"]
+      }
+    },
+    "appeareance": {
+      "editor": "link_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 8,
+    "itemType": "136567"
+  }, {
+    "id": "580988",
+    "label": "Cookie Consent",
+    "fieldType": "text",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "cookie_consent",
+    "hint": null,
+    "validators": {},
+    "appeareance": {
+      "editor": "markdown",
+      "parameters": {
+        "toolbar": ["heading", "bold", "italic", "strikethrough", "unordered_list", "ordered_list", "quote", "link", "image", "fullscreen"]
+      },
+      "addons": [],
+      "type": "markdown"
+    },
+    "position": 7,
+    "itemType": "136567"
+  }, {
+    "id": "580987",
+    "label": "Light Logo",
+    "fieldType": "file",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "light_logo",
+    "hint": null,
+    "validators": {},
+    "appeareance": {
+      "editor": "file",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 6,
+    "itemType": "136567"
+  }, {
+    "id": "580986",
+    "label": "Dark Logo",
+    "fieldType": "file",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "dark_logo",
+    "hint": null,
+    "validators": {},
+    "appeareance": {
+      "editor": "file",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 5,
+    "itemType": "136567"
+  }, {
+    "id": "580985",
+    "label": "Secondary Navigation",
+    "fieldType": "links",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "secondary_navigation",
+    "hint": null,
+    "validators": {
+      "itemsItemType": {
+        "itemTypes": ["136558"]
+      }
+    },
+    "appeareance": {
+      "editor": "links_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 2,
+    "itemType": "136567"
+  }, {
+    "id": "580983",
+    "label": "Footer Widgets",
+    "fieldType": "links",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "footer_widgets",
+    "hint": null,
+    "validators": {
+      "itemsItemType": {
+        "itemTypes": ["136561", "136563"]
+      }
+    },
+    "appeareance": {
+      "editor": "links_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 3,
+    "itemType": "136567"
+  }, {
+    "id": "580984",
+    "label": "Header Widget",
+    "fieldType": "links",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "header_widget",
+    "hint": null,
+    "validators": {
+      "itemsItemType": {
+        "itemTypes": ["136561", "136563"]
+      }
+    },
+    "appeareance": {
+      "editor": "links_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 4,
+    "itemType": "136567"
+  }, {
+    "id": "580968",
+    "label": "Main Navigation",
+    "fieldType": "links",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "main_navigation",
+    "hint": null,
+    "validators": {
+      "itemsItemType": {
+        "itemTypes": ["136558"]
+      }
+    },
+    "appeareance": {
+      "editor": "links_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 1,
+    "itemType": "136567"
+  }, {
+    "id": "580959",
+    "label": "content",
+    "fieldType": "string",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "content",
+    "hint": null,
+    "validators": {},
+    "appeareance": {
+      "editor": "single_line",
+      "parameters": {
+        "heading": false
+      },
+      "addons": []
+    },
+    "position": 2,
+    "itemType": "136564"
+  }, {
+    "id": "580958",
+    "label": "name",
+    "fieldType": "string",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "name",
+    "hint": null,
+    "validators": {},
+    "appeareance": {
+      "editor": "single_line",
+      "parameters": {
+        "heading": false
+      },
+      "addons": []
+    },
+    "position": 1,
+    "itemType": "136564"
+  }, {
+    "id": "584296",
+    "label": "Test",
+    "fieldType": "rich_text",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "test",
+    "hint": null,
+    "validators": {
+      "richTextBlocks": {
+        "itemTypes": ["137123"]
+      }
+    },
+    "appeareance": {
+      "editor": "rich_text",
+      "parameters": {
+        "startCollapsed": false
+      },
+      "addons": []
+    },
+    "position": 11,
+    "itemType": "136558"
+  }, {
+    "id": "580982",
+    "label": "Collection",
+    "fieldType": "link",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "collection",
+    "hint": null,
+    "validators": {
+      "itemItemType": {
+        "itemTypes": ["136569"]
+      }
+    },
+    "appeareance": {
+      "editor": "link_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 8,
+    "itemType": "136558"
+  }, {
+    "id": "580978",
+    "label": "Slug",
+    "fieldType": "slug",
+    "defaultValue": null,
+    "localized": true,
+    "apiKey": "slug",
+    "hint": null,
+    "validators": {
+      "slugTitleField": {
+        "titleFieldId": "580955"
+      },
+      "required": {},
+      "unique": {}
+    },
+    "appeareance": {
+      "editor": "slug",
+      "parameters": {
+        "urlPrefix": null
+      },
+      "addons": []
+    },
+    "position": 5,
+    "itemType": "136558"
+  }, {
+    "id": "580972",
+    "label": "Parent Document",
+    "fieldType": "link",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "parent_document",
+    "hint": "You may assign a parent document which can be used in hierarchical views, like multi level navigations or sitemaps.",
+    "validators": {
+      "itemItemType": {
+        "itemTypes": ["136558"]
+      }
+    },
+    "appeareance": {
+      "editor": "link_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 7,
+    "itemType": "136558"
+  }, {
+    "id": "580963",
+    "label": "Thumbnail",
+    "fieldType": "file",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "thumbnail",
+    "hint": "The thumbnail will be shown when this document is teasered somewhere.",
+    "validators": {},
+    "appeareance": {
+      "editor": "file",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 6,
+    "itemType": "136558"
+  }, {
+    "id": "580961",
+    "label": "Teaser",
+    "fieldType": "text",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "teaser",
+    "hint": "The text used in a teaser to this document.",
+    "validators": {},
+    "appeareance": {
+      "editor": "markdown",
+      "parameters": {
+        "toolbar": ["heading", "bold", "italic", "strikethrough", "unordered_list", "ordered_list", "quote", "link", "image", "fullscreen"]
+      },
+      "addons": [],
+      "type": "markdown"
+    },
+    "position": 4,
+    "itemType": "136558"
+  }, {
+    "id": "580960",
+    "label": "Meta-Tags",
+    "fieldType": "links",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "meta_tags",
+    "hint": null,
+    "validators": {
+      "itemsItemType": {
+        "itemTypes": ["136564"]
+      }
+    },
+    "appeareance": {
+      "editor": "links_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 9,
+    "itemType": "136558"
+  }, {
+    "id": "580955",
+    "label": "Title",
+    "fieldType": "string",
+    "defaultValue": null,
+    "localized": true,
+    "apiKey": "title",
+    "hint": null,
+    "validators": {
+      "required": {}
+    },
+    "appeareance": {
+      "editor": "single_line",
+      "parameters": {
+        "heading": false
+      },
+      "addons": []
+    },
+    "position": 1,
+    "itemType": "136558"
+  }, {
+    "id": "580951",
+    "label": "Blocks",
+    "fieldType": "links",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "blocks",
+    "hint": null,
+    "validators": {
+      "itemsItemType": {
+        "itemTypes": ["136561", "136563"]
+      }
+    },
+    "appeareance": {
+      "editor": "links_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 10,
+    "itemType": "136558"
+  }, {
+    "id": "580950",
+    "label": "Reference",
+    "fieldType": "link",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "reference",
+    "hint": "Use a reference to link an internal document.",
+    "validators": {
+      "itemItemType": {
+        "itemTypes": ["136558"]
+      }
+    },
+    "appeareance": {
+      "editor": "link_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 2,
+    "itemType": "136560"
+  }, {
+    "id": "580949",
+    "label": "URL",
+    "fieldType": "string",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "url",
+    "hint": "Use a URL to link any website.",
+    "validators": {},
+    "appeareance": {
+      "editor": "single_line",
+      "parameters": {
+        "heading": false
+      },
+      "addons": []
+    },
+    "position": 1,
+    "itemType": "136560"
+  }, {
+    "id": "580953",
+    "label": "Links",
+    "fieldType": "links",
+    "defaultValue": null,
+    "localized": false,
+    "apiKey": "links",
+    "hint": null,
+    "validators": {
+      "itemsItemType": {
+        "itemTypes": ["136560"]
+      }
+    },
+    "appeareance": {
+      "editor": "links_select",
+      "parameters": {},
+      "addons": []
+    },
+    "position": 1,
+    "itemType": "136563"
+  }]
+}

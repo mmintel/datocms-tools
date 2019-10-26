@@ -54,6 +54,7 @@ export default async function() {
 | `importMenu` | `{ apiKey, menuItems, models }` | Imports menu items to the project with given `apiKey`. Will also delete all menuItems that do not exist in the given data.
 | `exportMenu` | `{ apiKey }` | Will export menuItems from the project with given `apiKey`
 | `clearRelations` | `{ models }` | Will remove related fields, e.g. from modular content fields
+| `clearRelations` | `{ models }` | Will remove related fields, e.g. from modular content fields
 
 ### Via CLI
 I created scripts for each of the methods so you can use them from your command line. Each script is also registered as an npm command. However you need to pass an API token from DatoCMS with write access.
