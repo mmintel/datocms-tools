@@ -51,7 +51,7 @@ describe('removeModels', () => {
       models,
     });
     // eslint-disable-next-line no-console
-    expect(console.warn).toHaveBeenCalledWith('Model not found.');
+    expect(console.warn).toHaveBeenCalled();
     expect(filteredModels).toEqual(models);
   });
 
