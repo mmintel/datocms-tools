@@ -1,5 +1,6 @@
 import { extractModels } from '@/';
 import models from './sample/models.json';
+import extractExampleModels from './sample/extract-example-models.json';
 
 jest.spyOn(global.console, 'warn');
 
@@ -62,9 +63,23 @@ describe('extractModels', () => {
       apiKeys: apiKey,
       models,
     });
-    const extractedModel = extracted.itemTypes.find((m) => m.apiKey === apiKey);
-    extractedModel.fields.forEach((fieldID) => {
+    const extractedItemType = extracted.itemTypes.find((m) => m.apiKey === apiKey);
+    extractedItemType.fields.forEach((fieldID) => {
       expect(extracted.fields.find((f) => f.id === fieldID)).toBeDefined();
     });
+  });
+
+  it('should not include any other itemTypes and fields', () => {
+    const apiKey = 'document';
+    const extracted = extractModels({
+      apiKeys: apiKey,
+      models: extractExampleModels,
+    });
+    const allowedItemTypes = [apiKey, 'text'];
+    const allowedFields = ['blocks'];
+    const otherItemTypes = extracted.itemTypes.filter((itemType) => !allowedItemTypes.includes(itemType.apiKey));
+    const otherFields = extracted.fields.filter((field) => !allowedFields.includes(field.apiKey));
+    expect(otherItemTypes).toEqual([]);
+    expect(otherFields).toEqual([]);
   });
 });
