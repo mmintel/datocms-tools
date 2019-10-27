@@ -1,3 +1,4 @@
+import { sortBy } from 'lodash';
 import { exportModels } from '@/';
 import models from './sample/models.json';
 
@@ -21,5 +22,10 @@ describe('exportModels', () => {
     const exportedModels = await exportModels({ apiKey: 'xxx' });
     expect(exportedModels.itemTypes).toEqual(models.itemTypes);
     expect(exportedModels.fields).toEqual(models.fields);
+  });
+
+  it('should order the fields by position', async () => {
+    const exportedModels = await exportModels({ apiKey: 'xxx' });
+    expect(exportedModels.fields).toEqual(sortBy(models.fields, 'position'));
   });
 });
