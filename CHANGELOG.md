@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/mmintel/datocms-tools/compare/v0.1.3...v0.1.4) (2019-10-27)
+
+
+### Bug Fixes
+
+* sort fields by position ([bcacd9f](https://github.com/mmintel/datocms-tools/commit/bcacd9f))
+
+
+### Features
+
+* adds content features ([5efccae](https://github.com/mmintel/datocms-tools/commit/5efccae))
+
 ### [0.1.3](https://github.com/mmintel/datocms-tools/compare/v0.1.2...v0.1.3) (2019-10-26)
 
 
