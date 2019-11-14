@@ -60,6 +60,8 @@ export default async function() {
 | `exportMenu` | `{ apiKey }` | Will export menuItems from the project with given `apiKey`
 | `clearRelations` | `{ models }` | Removes related fields, e.g. from modular content fields
 | `removeModels` | `{ apiKeys, models }` | Removes one or more models including all their relations.
+| `exportContent` | `{ apiKey }` | Exports all items of your project.
+| `importContent` | `{ apiKey, content, models }` | Imports items into a project.
 
 ### Via CLI
 DatoCMS tools provides CLI commands matching the method names.
@@ -71,3 +73,5 @@ DatoCMS tools provides CLI commands matching the method names.
 * export-menu
 * clear-relations
 * remove-models
+* export-content
+* import-content
