@@ -61,7 +61,7 @@ export default async function() {
 | `clearRelations` | `{ models }` | Removes related fields, e.g. from modular content fields
 | `removeModels` | `{ apiKeys, models }` | Removes one or more models including all their relations.
 | `exportContent` | `{ apiKey }` | Exports all items of your project.
-| `importContent` | `{ apiKey, content, models }` | Imports items into a project.
+| `importContent` | `{ apiKey, content, models? }` | Imports items into a project. Models are required if you want to move content from one project to another.
 
 ### Via CLI
 DatoCMS tools provides CLI commands matching the method names.
