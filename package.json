@@ -3,6 +3,10 @@
   "version": "0.1.10",
   "description": "Useful tools for DatoCMS",
   "main": "dist/lib.min.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/mmintel/datocms-tools.git"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint lib/*.js",
