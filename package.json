@@ -4,8 +4,8 @@
   "description": "Useful tools for DatoCMS",
   "main": "dist/lib.min.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/mmintel/datocms-tools.git"
+    "type": "git",
+    "url": "https://github.com/mmintel/datocms-tools.git"
   },
   "scripts": {
     "test": "jest",
@@ -51,7 +51,7 @@
     "jest": "^24.1.0",
     "rollup": "^1.21.4",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-terser": "^5.1.3",
     "standard-version": "^7.0.0"
   },
   "jest": {
