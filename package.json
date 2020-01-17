@@ -8,7 +8,7 @@
     "url": "https://github.com/mmintel/datocms-tools.git"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --setupFiles dotenv/config",
     "lint": "eslint lib/*.js",
     "build": "rollup -c",
     "reset": "node -r esm scripts/reset.js",
@@ -39,6 +39,7 @@
     "babel-jest": "^24.1.0",
     "babel-loader": "^8.0.5",
     "commitlint": "^8.1.0",
+    "dotenv": "^8.2.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-import-resolver-alias": "^1.1.2",
