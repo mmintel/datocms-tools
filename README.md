@@ -1,4 +1,4 @@
-# datocms-tools [![Build Status](https://travis-ci.com/mmintel/datocms-tools.svg?branch=master)](https://travis-ci.com/mmintel/datocms-tools)
+# datocms-tools [![Build Status](https://travis-ci.com/mmintel/datocms-tools.svg?branch=master)](https://travis-ci.com/mmintel/datocms-tools) [![Greenkeeper badge](https://badges.greenkeeper.io/mmintel/datocms-tools.svg)](https://greenkeeper.io/)
 Provides tools to import, export or reset [DatoCMS](http://datocms.com) projects. Will also make sure to update existing models.
 ![datocms-tools](/assets/image.png)
 [Read more at this Medium article](https://medium.com/baretheme/duplicate-a-datocms-project-without-its-data-798b5dcabd15)

@@ -44,11 +44,11 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.15.2",
+    "eslint-plugin-jest": "^23.6.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "husky": "^3.0.4",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^4.0.10",
     "jest": "^24.9.0",
     "rollup": "^1.21.4",
     "rollup-plugin-babel": "^4.3.3",
@@ -66,11 +66,11 @@
     }
   },
   "dependencies": {
-    "datocms-client": "^2.0.9",
+    "datocms-client": "^3.0.14",
     "esm": "^3.2.25",
     "fs-extra": "^8.1.0",
     "lodash": "^4.17.15",
     "prompts": "^2.2.1",
-    "yargs": "^14.0.0"
+    "yargs": "^15.1.0"
   }
 }
