@@ -1,0 +1,151 @@
+[{
+  "id": "1656090",
+  "title": {
+    "en": "Home"
+  },
+  "slug": {
+    "en": ""
+  },
+  "collection": null,
+  "thumbnail": null,
+  "teaser": "This will be our index page.",
+  "metaTags": [],
+  "blocks": [],
+  "updatedAt": "2019-10-26T13:29:44.346+01:00",
+  "createdAt": "2019-10-26T11:30:02.177+01:00",
+  "position": 1,
+  "parentId": null,
+  "meta": {
+    "createdAt": "2019-10-26T11:30:02.177+01:00",
+    "updatedAt": "2019-10-26T13:29:44.346+01:00",
+    "publishedAt": "2019-10-26T13:29:44.360+01:00",
+    "firstPublishedAt": "2019-10-26T11:30:02.191+01:00",
+    "publicationScheduledAt": null,
+    "status": "published",
+    "isValid": true,
+    "currentVersion": "3176857"
+  },
+  "itemType": "150587",
+  "creator": {
+    "id": "4268",
+    "type": "account"
+  }
+}, {
+  "id": "1656371",
+  "title": {
+    "en": "Blog"
+  },
+  "slug": {
+    "en": "blog"
+  },
+  "collection": null,
+  "thumbnail": null,
+  "teaser": "This is the overview of our articles.",
+  "metaTags": [],
+  "blocks": [],
+  "updatedAt": "2019-10-26T13:29:34.616+01:00",
+  "createdAt": "2019-10-26T13:27:52.030+01:00",
+  "position": 2,
+  "parentId": null,
+  "meta": {
+    "createdAt": "2019-10-26T13:27:52.030+01:00",
+    "updatedAt": "2019-10-26T13:29:34.616+01:00",
+    "publishedAt": "2019-10-26T13:29:34.629+01:00",
+    "firstPublishedAt": "2019-10-26T13:27:52.044+01:00",
+    "publicationScheduledAt": null,
+    "status": "published",
+    "isValid": true,
+    "currentVersion": "3176856"
+  },
+  "itemType": "150587",
+  "creator": {
+    "id": "4268",
+    "type": "account"
+  }
+}, {
+  "id": "1656374",
+  "title": {
+    "en": "Post One"
+  },
+  "slug": {
+    "en": "post-one"
+  },
+  "collection": "1656372",
+  "thumbnail": null,
+  "teaser": "This is the first post.",
+  "metaTags": [],
+  "blocks": [],
+  "updatedAt": "2019-10-26T13:29:09.028+01:00",
+  "createdAt": "2019-10-26T13:28:27.855+01:00",
+  "position": 1,
+  "parentId": "1656371",
+  "meta": {
+    "createdAt": "2019-10-26T13:28:27.855+01:00",
+    "updatedAt": "2019-10-26T13:29:09.028+01:00",
+    "publishedAt": "2019-10-26T13:28:32.414+01:00",
+    "firstPublishedAt": "2019-10-26T13:28:27.870+01:00",
+    "publicationScheduledAt": null,
+    "status": "published",
+    "isValid": true,
+    "currentVersion": "3176854"
+  },
+  "itemType": "150587",
+  "creator": {
+    "id": "4268",
+    "type": "account"
+  }
+}, {
+  "id": "1656381",
+  "title": {
+    "en": "Post Two"
+  },
+  "slug": {
+    "en": "post-two"
+  },
+  "collection": "1656372",
+  "thumbnail": null,
+  "teaser": "This is the second post.",
+  "metaTags": [],
+  "blocks": [],
+  "updatedAt": "2019-10-26T13:29:09.021+01:00",
+  "createdAt": "2019-10-26T13:29:04.979+01:00",
+  "position": 0,
+  "parentId": "1656371",
+  "meta": {
+    "createdAt": "2019-10-26T13:29:04.979+01:00",
+    "updatedAt": "2019-10-26T13:29:09.021+01:00",
+    "publishedAt": "2019-10-26T13:29:09.062+01:00",
+    "firstPublishedAt": "2019-10-26T13:29:04.993+01:00",
+    "publicationScheduledAt": null,
+    "status": "published",
+    "isValid": true,
+    "currentVersion": "3176853"
+  },
+  "itemType": "150587",
+  "creator": {
+    "id": "4268",
+    "type": "account"
+  }
+}, {
+  "id": "1656372",
+  "thumbnail": null,
+  "title": "Article",
+  "indexDocument": "1656371",
+  "updatedAt": "2019-10-26T13:28:10.317+01:00",
+  "createdAt": "2019-10-26T13:28:10.311+01:00",
+  "meta": {
+    "createdAt": "2019-10-26T13:28:10.311+01:00",
+    "updatedAt": "2019-10-26T13:28:10.317+01:00",
+    "publishedAt": "2019-10-26T13:28:10.330+01:00",
+    "firstPublishedAt": "2019-10-26T13:28:10.330+01:00",
+    "publicationScheduledAt": null,
+    "status": "published",
+    "isValid": true,
+    "currentVersion": "3176841"
+  },
+  "itemType": "150589",
+  "creator": {
+    "id": "4268",
+    "type": "account"
+  }
+}]

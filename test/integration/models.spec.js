@@ -1,5 +1,5 @@
 import { exportModels, reset, importModels } from '@/';
-import models from './models';
+import models from './models.json';
 
 jest.setTimeout(20000);
 jest.unmock('datocms-client');

@@ -1,5 +1,5 @@
-import models from '../test/sample/models.json';
-import content from '../test/sample/content.json';
+import models from '../sample/models.json';
+import content from '../sample/content.json';
 
 export class SiteClient {
   constructor(apiKey) {
