@@ -38,7 +38,7 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.1.0",
     "babel-loader": "^8.0.5",
-    "commitlint": "^8.1.0",
+    "commitlint": "^8.3.5",
     "dotenv": "^8.2.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
