@@ -28,7 +28,7 @@
     "reset-content": ".bin/reset-content.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.10.2",
     "@babel/node": "^7.6.2",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-transform-regenerator": "^7.4.5",
